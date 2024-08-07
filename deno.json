@@ -1,0 +1,22 @@
+{
+  "name": "@formo/formo",
+  "tasks": {
+    "dev": "deno run --watch main.tsx"
+  },
+  "lock": false,
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "dom.asynciterable",
+      "deno.ns",
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+  },
+  "imports": {
+    "@preact/signals": "npm:@preact/signals@^1.3.0",
+    "preact": "npm:preact@^10.23.1",
+    "@/": "./src/"
+  }
+}
